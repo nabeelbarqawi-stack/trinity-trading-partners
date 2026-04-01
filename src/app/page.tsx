@@ -26,8 +26,8 @@ function Ticker() {
   const items = ["OPTIONS TRADING", "RISK MANAGEMENT", "IRON CONDORS", "CREDIT SPREADS", "MOMENTUM TRADING", "BREAKOUT STRATEGIES", "MARKET STRUCTURE", "TRADE RECAPS"];
   const doubled = [...items, ...items];
   return (
-    <div className="overflow-hidden border-y border-[#1a2d4a] py-3" style={{ background: "linear-gradient(90deg, #070f1e, #0a1628, #070f1e)" }}>
-      <div className="ticker-left flex gap-10 text-[#4a9eff] tracking-widest text-xs uppercase font-semibold" style={{ fontFamily: "var(--font-inter)" }}>
+    <div className="overflow-hidden border-y border-[#1a2d4a] h-10 flex items-center" style={{ background: "linear-gradient(90deg, #070f1e, #0a1628, #070f1e)" }}>
+      <div className="ticker-left flex items-center gap-10 text-[#4a9eff] tracking-widest text-xs uppercase font-semibold leading-none" style={{ fontFamily: "var(--font-inter)" }}>
         {doubled.map((item, i) => (
           <span key={i} className="flex items-center gap-10 whitespace-nowrap">
             {item}
