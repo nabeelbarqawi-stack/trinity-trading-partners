@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #050d1a;
+  --navy-mid: #0a1628;
+  --navy-light: #0f1f3d;
+  --blue: #1a6fd4;
+  --blue-light: #4a9eff;
+  --blue-glow: #2d8fff;
+  --border: #1a2d4a;
+}
+
+@theme inline {
+  --font-bebas: var(--font-bebas);
+  --font-inter: var(--font-inter);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--navy);
+  color: #fff;
+  font-family: var(--font-inter), Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ── Ticker ── */
+@keyframes ticker-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ticker-left {
+  animation: ticker-left 25s linear infinite;
+  white-space: nowrap;
+  display: flex;
+}
+
+/* ── Fade up ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Blue gradient text ── */
+.blue-text {
+  background: linear-gradient(135deg, #4a9eff 0%, #a8d4ff 50%, #4a9eff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Section heading ── */
+.section-title {
+  font-family: var(--font-bebas), 'Bebas Neue', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* ── Buttons ── */
+.btn-blue {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a6fd4, #2d8fff);
+  color: #fff;
+  padding: 14px 36px;
+  font-family: var(--font-bebas), sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: opacity 0.2s, transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+.btn-blue:hover { opacity: 0.85; transform: translateY(-2px); }
+
+.btn-outline {
+  display: inline-block;
+  border: 2px solid #2d8fff;
+  color: #4a9eff;
+  padding: 14px 36px;
+  font-family: var(--font-bebas), sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+.btn-outline:hover { background: #2d8fff22; transform: translateY(-2px); }
+
+/* ── Nav ── */
+.nav-link {
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  color: #8ab4d4;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.nav-link:hover { color: #4a9eff; }
+
+/* ── Cards ── */
+.feature-card {
+  background: linear-gradient(135deg, #0a1628 0%, #0d1c36 100%);
+  border: 1px solid #1a2d4a;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.feature-card:hover {
+  border-color: #2d8fff66;
+  transform: translateY(-4px);
+}
+
+/* ── Glow divider ── */
+.blue-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #1a6fd4, #4a9eff);
+  margin: 16px 0;
+}
+
+/* ── Plan card highlight ── */
+.plan-highlight {
+  background: linear-gradient(160deg, #0d1e3d 0%, #0a172e 100%);
+  border: 1px solid #2d8fff;
+  position: relative;
+}
+
+/* ── Stat number ── */
+.stat-num {
+  font-family: var(--font-bebas), sans-serif;
+  background: linear-gradient(135deg, #4a9eff, #a8d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Grid pattern overlay ── */
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(26,111,212,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,111,212,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
