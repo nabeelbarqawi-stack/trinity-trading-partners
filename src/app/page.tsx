@@ -79,7 +79,7 @@ function Nav() {
           ))}
         </div>
 
-        <a href="#pricing" className="hidden md:inline-block btn-blue text-sm px-6 py-3">Subscribe Now</a>
+        <a href="https://whop.com/trinity-trading-partners" target="_blank" rel="noopener noreferrer" className="hidden md:inline-block btn-blue text-sm px-6 py-3">Subscribe Now</a>
 
         <button className="md:hidden flex flex-col gap-1.5 p-2" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           <span className={`block w-6 h-0.5 bg-white transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
@@ -93,7 +93,7 @@ function Nav() {
           {links.map((l) => (
             <a key={l.href} href={l.href} className="nav-link text-lg py-2" onClick={() => setMenuOpen(false)}>{l.label}</a>
           ))}
-          <a href="#pricing" className="btn-blue text-center mt-2">Subscribe Now</a>
+          <a href="https://whop.com/trinity-trading-partners" target="_blank" rel="noopener noreferrer" className="btn-blue text-center mt-2">Subscribe Now</a>
         </div>
       )}
     </nav>
@@ -137,7 +137,7 @@ function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#pricing" className="btn-blue text-center">Start Subscription</a>
+            <a href="https://whop.com/trinity-trading-partners" target="_blank" rel="noopener noreferrer" className="btn-blue text-center">Start Subscription</a>
             <a href="#about" className="btn-outline text-center">Learn More</a>
           </div>
 
@@ -320,7 +320,7 @@ function Pricing() {
                 </li>
               ))}
             </ul>
-            <a href="#contact" className="btn-outline text-center">Get Started</a>
+            <a href="https://whop.com/trinity-trading-partners" target="_blank" rel="noopener noreferrer" className="btn-outline text-center">Get Started</a>
           </div>
 
           {/* Annual */}
@@ -346,7 +346,7 @@ function Pricing() {
                 </li>
               ))}
             </ul>
-            <a href="#contact" className="btn-blue text-center">Subscribe Annually</a>
+            <a href="https://whop.com/trinity-trading-partners" target="_blank" rel="noopener noreferrer" className="btn-blue text-center">Subscribe Annually</a>
           </div>
         </div>
 
@@ -427,7 +427,7 @@ function CTABanner() {
         <p className="text-[#4a7a9b] max-w-xl mx-auto mb-10 text-base" style={{ fontFamily: "var(--font-inter)" }}>
           Join hundreds of traders learning to execute with discipline, manage risk properly, and build sustainable trading habits.
         </p>
-        <a href="#pricing" className="btn-blue text-lg px-10 py-5">Join Trinity Trading Partners</a>
+        <a href="https://whop.com/trinity-trading-partners" target="_blank" rel="noopener noreferrer" className="btn-blue text-lg px-10 py-5">Join Trinity Trading Partners</a>
       </div>
     </section>
   );
