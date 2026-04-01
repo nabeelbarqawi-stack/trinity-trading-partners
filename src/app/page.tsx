@@ -186,7 +186,7 @@ function About() {
         <div ref={ref} className="fade-up relative">
           <div className="relative border border-[#1a2d4a] p-10 feature-card">
             <div className="flex items-center justify-center mb-8">
-              <Image src="/images/logo.png" alt="TTP" width={180} height={180} className="object-contain opacity-90" onError={() => {}} />
+              <Image src="/images/logo-full.png" alt="TTP" width={240} height={120} className="object-contain opacity-90" onError={() => {}} />
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
@@ -497,12 +497,8 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12 mb-10">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Image src="/images/logo.png" alt="TTP" width={36} height={36} className="object-contain" onError={() => {}} />
-              <div>
-                <span style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-xl tracking-widest text-white block">TRINITY TRADING</span>
-                <span style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-xl tracking-widest blue-text block -mt-1">PARTNERS</span>
-              </div>
+            <div className="flex items-center mb-4">
+              <Image src="/images/logo-full.png" alt="Trinity Trading Partners" width={200} height={80} className="object-contain" onError={() => {}} />
             </div>
             <p className="text-[#2a4a6b] text-xs leading-relaxed max-w-xs" style={{ fontFamily: "var(--font-inter)" }}>
               Options trading education built around process over hype. Real strategies. Real discipline. Real results.
