@@ -64,8 +64,8 @@ function Nav() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#050d1a]/95 backdrop-blur-sm border-b border-[#1a2d4a]" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
         <a href="#hero" className="flex items-center gap-3">
-          <div className="w-10 h-10 relative flex-shrink-0">
-            <Image src="/images/logo.png" alt="TTP Logo" fill className="object-contain" onError={() => {}} />
+          <div className="w-10 h-10 relative flex-shrink-0 rounded-full overflow-hidden">
+            <Image src="/images/logo.png" alt="TTP Logo" fill className="object-cover" onError={() => {}} />
           </div>
           <div className="flex flex-col leading-none">
             <span style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-lg tracking-widest text-white">TRINITY TRADING</span>
@@ -161,7 +161,9 @@ function Hero() {
             <div className="absolute inset-8 rounded-full border border-[#2d8fff]/20" />
             <div className="absolute inset-16 rounded-full border border-[#2d8fff]/10" />
             <div className="relative w-full h-full flex items-center justify-center">
-              <Image src="/images/logo.png" alt="Trinity Trading Partners" width={260} height={260} className="object-contain drop-shadow-2xl" onError={() => {}} />
+              <div className="w-64 h-64 rounded-full overflow-hidden">
+                <Image src="/images/logo.png" alt="Trinity Trading Partners" width={260} height={260} className="object-cover w-full h-full" onError={() => {}} />
+              </div>
             </div>
           </div>
         </div>
@@ -417,7 +419,9 @@ function CTABanner() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="w-12 h-px bg-[#2d8fff]/40" />
-          <Image src="/images/logo.png" alt="TTP" width={48} height={48} className="object-contain opacity-80" onError={() => {}} />
+          <div className="w-12 h-12 rounded-full overflow-hidden opacity-80">
+            <Image src="/images/logo.png" alt="TTP" width={48} height={48} className="object-cover w-full h-full" onError={() => {}} />
+          </div>
           <div className="w-12 h-px bg-[#2d8fff]/40" />
         </div>
         <h2 className="section-title text-white leading-none mb-4" style={{ fontSize: "clamp(3rem, 7vw, 6rem)" }}>
