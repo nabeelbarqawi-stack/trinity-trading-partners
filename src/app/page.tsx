@@ -111,7 +111,7 @@ function Hero() {
           style={{ background: "radial-gradient(circle, #2d8fff 0%, transparent 70%)" }} />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 w-full grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-24 w-full grid md:grid-cols-2 gap-12 items-center">
         <div>
           <div className="flex items-center gap-3 mb-6">
             <div className="w-8 h-px bg-[#2d8fff]" />
@@ -169,10 +169,6 @@ function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-        <span className="text-xs text-[#4a9eff] tracking-widest uppercase" style={{ fontFamily: "var(--font-inter)" }}>Scroll</span>
-        <div className="w-px h-10 bg-gradient-to-b from-[#4a9eff] to-transparent" />
-      </div>
     </section>
   );
 }
